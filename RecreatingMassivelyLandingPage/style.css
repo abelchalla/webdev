@@ -1,0 +1,410 @@
+:root{
+    --desktop: 1200px;
+    --laptop: 1024px;
+    --tablet: 768px;
+    --phone: 480px;
+}
+
+
+body{
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 0px;
+    min-width: 800px;
+    background-attachment: fixed;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+
+body::after{
+    content: '';
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    background-color: #1e252d;
+    opacity: .8;
+    top: 0;
+    left: 0;
+}
+
+body *{
+    z-index: 1;
+    position: relative;
+}
+
+#tit-des{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 350px 0px 0px 0px;
+}
+
+#title{
+    text-align: center;
+    color: white;
+    font-family: Source Sans Pro, Helvetica, sans-serif;
+    font-size: 70px;
+    margin: 0px 0px 29.3333px;
+}
+
+#des{
+    color: white;
+    font-family: Merriweather, Georgia, serif;
+    text-align: center;
+    margin: -3.66667px 0px 29.3333px;
+    padding: 50px;
+}
+
+#circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px white solid;
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+}
+
+#circle:hover{
+    border: 2px cyan solid;
+}
+
+#down::after{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    font-size: 2.5vh;
+    content: "\f063";
+    -webkit-font-smoothing: antialiased;
+    color: white;  
+}
+
+#down:hover::after{
+    color: cyan;
+}
+
+#wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#nav{
+    margin: 30px auto 0 auto;
+    bottom: 0;
+}
+
+#header{
+    padding: 5px;
+    margin: 10px;
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(59, 65, 63, 0.2);
+    overflow: hidden;
+    padding: 0 auto;
+}
+
+.ul-list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.list{
+    margin: 20px;
+    font-size: 12px;
+    color: white;
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+.target{
+           
+    text-decoration: none;
+    color: white;
+}
+
+.target:hover{
+    color: cyan;
+}
+
+.list2{
+    margin: 20px;
+    font-size: 12px;
+}
+
+#icons{
+    padding: 2px;
+    margin: auto 0 auto 270px;
+}
+.fa-twitter, .fa-facebook-f, .fa-instagram, .fa-github{
+    color: white;
+}
+.fa-twitter:hover, .fa-facebook-f:hover, .fa-instagram:hover, .fa-github:hover{
+    color: cyan;
+}
+#home{
+    background: white;
+    text-align: center;
+    padding: 70px 0 0 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+#date{
+    font-family: Merriweather, Georgia, serif;
+}
+#date::before{
+    border-top: solid 10px;
+    width: 100%;
+    background: black;
+    content: "";
+    -webkit-font-smoothing: antialiased;
+    color: black;  
+
+}
+
+.dis{
+   text-decoration: none;
+   color: black;
+}
+.dis:hover{
+    color: cyan;
+}
+
+
+#par{
+    margin: 70px auto 40px auto;
+    font-family: Merriweather, Georgia, serif;
+    font-size: 58px;
+}
+.par{
+    margin: 70px auto 40px auto;
+    font-family: Merriweather, Georgia, serif;
+    font-size: 25.6px;
+}
+
+
+#des-l{
+    font-size: 14.5px;
+    font-family: Merriweather, Georgia, serif;
+
+}
+#first-pic{
+    width: 938px;
+    height: 457px;
+}
+
+#full{
+    margin: 20px 0 40px 0;
+}
+
+.full{
+    display: inline-block;
+    background-color: transparent;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: 2px black solid;
+    font-size: 12px;
+    margin: 20px 0 40px 0;
+
+}
+
+.full:hover{
+    color: cyan;
+    border: 2px cyan solid;
+}
+
+.rest-par{
+    margin: 70px auto 40px auto;
+    font-family: Merriweather, Georgia, serif;
+    font-size: 58px;
+}
+
+#des-l{
+    font-size: 14.5px;
+    font-family: Merriweather, Georgia, serif;
+
+}
+
+.rest-date{
+    display: inline-block;
+    margin: 40px 0 0 0;
+}
+
+.rest-pic{
+    width: 448px;
+    height: 273px;
+    transition: 0.5s all ease-in-out;
+}
+
+.rest-pic:hover{
+    transform: scale(1.1);
+}
+
+.rest-par{
+    font-size: 14.67px;
+
+}
+
+.rest-content{
+    display: inline;
+    background: white;
+    width: 49.8%;
+    float: left;
+    border: 1px rgb(187, 183, 183) solid;
+}
+
+.rest-content1{
+    background: white;
+    width: 49.8%;
+    float: right;
+    border: 1px rgb(187, 183, 183) solid;
+}
+
+#form{
+    bottom: 0;
+}
+#contact{
+    background: rgb(230,230,230);
+    clear: both;
+    width: 40%;
+    padding: 50px;
+    float: left;
+}
+#message{
+    padding: 40px 0;
+}
+.t{
+    margin: 20px;
+    font-family: Merriweather, Georgia, serif;
+    font-size: 12px;
+
+}
+.f{
+    margin: 20px;
+    height: 34px;
+    width: 90%;
+    background: rgb(230, 230, 230);
+}
+
+#submit{
+    background: transparent;
+    color: black;
+    border: 2px black solid;
+    padding: 15px;
+    font-family: Merriweather, Georgia, serif;
+    font-size: 12px;
+    margin: 20px;
+}
+
+#submit:hover{
+    color: cyan;
+    border: 2px cyan solid;
+}
+
+#extra-info{
+    padding: 20px;
+    display: inline-block;
+    background: rgb(230, 230, 230);
+    border: 2px rgb(141, 141, 141) solid;
+    clear: both;
+    width: 45.5%;
+    height: 517.5px;
+}
+
+.l{
+  padding: 10.7px;  
+}
+
+.bot-border{
+    border-bottom: 2px rgb(141, 141, 141) solid; 
+}
+
+#icons-bot{
+    margin: 20px;  
+}
+
+.icons-bot1{
+    padding: 20px;  
+}
+
+@media only screen and (max-width: 450px) {
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    body{
+        max-width: 100%;
+    }
+    #tit-des{
+        max-width: 400px;
+        font-size: 1em;
+    }
+    #nav{
+        max-width: 400px;
+        margin: 0;
+        padding: 0;
+    }
+    #wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    #home{
+        display: flex;
+        flex-direction:column;
+        max-width: 400px;
+    }
+    .rest-content{
+        background: white;
+        width: 400px;
+        border: 1px rgb(187, 183, 183) solid;
+    }
+
+    .rest-content1{
+        background: white;
+        width: 400px;
+        border: 1px rgb(187, 183, 183) solid;
+    }
+    #extra-info{
+        display: flex;
+        flex-direction: column;
+        background: rgb(230, 230, 230);
+        border: 2px rgb(141, 141, 141) solid;
+        width: 500px;
+        padding: 0px;
+        margin: 0px;
+    }
+    #contact{
+        max-width: 340px;
+        font-size: 10px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .bot-border{
+        max-width: 400px;
+    }
+    #title{
+        font-size: 40px;
+    }
+    #par{
+        font-size: 40px;
+    }
+    .par{
+        font-size: 30px;
+    }
+
+}
